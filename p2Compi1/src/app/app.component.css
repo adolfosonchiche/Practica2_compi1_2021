@@ -1,0 +1,32 @@
+
+  .example-full-width {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 20px;
+    padding: 8px 10px;
+    border-style:dotted;
+    box-shadow:10px 10px 3px 12px green;
+  }
+
+  .textArea {
+      vertical-align: middle;
+      margin-left: 4%;
+    background-position: 50%50%;
+    color: black;
+    border-style:dotted;
+    box-shadow:10px 10px 12px 12px steelblue;
+  }
+
+  .button-row {
+    vertical-align: middle;
+    color:black;
+    background-color: red;
+    margin-left: 29%;
+    box-shadow:4px 4px 4px 7px green;
+    display: table-cell;
+    width: 170px;
+    font-size: 24px;
+    font-style: italic;
+  }
+ 
