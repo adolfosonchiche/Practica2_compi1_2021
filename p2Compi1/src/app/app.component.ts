@@ -7,6 +7,8 @@ import * as Analizador from './as/analizador'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
   title = 'p2Compi1';
 
@@ -15,6 +17,10 @@ export class AppComponent {
   tipo : String;
   arreglo = [];
   constructor() { 
+    var dar = (function(){
+      return 'hola mundo';
+    });
+    
   }
 
   // mymodule.js
@@ -40,6 +46,8 @@ export class AppComponent {
     console.log('ERROR EN PARSER   ********'+error);
   }
  
-
  }
+
+ 
 }
+

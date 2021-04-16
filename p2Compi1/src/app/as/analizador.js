@@ -397,7 +397,7 @@ var analizador = (function(){
                 case 3:
                     // accept
                     if (contador > 0) {
-                        return lisErrores;
+                        return 'SE ENCONTRARON ERRORES:\n'+lisErrores;
                     } else {
                         return valores;   
                     }
