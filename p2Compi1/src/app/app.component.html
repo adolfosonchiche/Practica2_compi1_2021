@@ -2,21 +2,15 @@
   <!--<app-vid></app-vid>  -->
 
  <label class="example-full-width">Creador de analizador sintactico</label><br><br>
- <textarea   class="textArea" #titleInput matInput placeholder="lenguaje wison..." cols="100" rows="25" [ngModel]="lisrDat"></textarea>
+ <textarea   class="textArea" #titleInput matInput placeholder="lenguaje wison..." cols="100" rows="15" [ngModel]="lisrDat"></textarea>
  <br><br><br>
         
  <button class="button-row" (click) ="compilarArchivo(titleInput.value);" >Compilar</button>
  <br><br><br>
 
  <label class="example-full-width">OUTPUT</label><br><br>
- <textarea class="textArea" matInput placeholder="datos encontrados al compilar..." cols="100" rows="25">{{lisrDat}}{{errores}}</textarea>
+ <textarea class="textArea" matInput placeholder="datos encontrados al compilar..." cols="100" rows="10">{{lisrDat}}{{errores}}</textarea>
  <br><br><br>
 
- <nav>
-     <ul>
-       <li><a href="/primero" >First Component</a></li>
-       <li><a routerLink="/segundo" routerLinkActive="active">Second Component</a></li>
-     </ul>
-   </nav>
 
 </form>

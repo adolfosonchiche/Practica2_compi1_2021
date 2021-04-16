@@ -12,22 +12,34 @@ export class AppComponent {
 
   lisrDat='';
   errores='';
-  tipo : string;
+  tipo : String;
   arreglo = [];
-  /*constructor() { 
-  }*/
+  constructor() { 
+  }
 
   // mymodule.js
+
+
+
  
   compilarArchivo(dat:string) : void {
+    this.errores = '';
    
   let parser = Analizador.parser
   //var parser = Analizar.parse
-  this.arreglo = parser.parse(dat);
-  
-   //this.arreglo = Analizador.ARREGLO;
-   console.log('TAMAÑO DE ARREGLO\n\n '+this.tipo)
-   this.errores = '\n\n ' + dat;
+  this.tipo = parser.parse(dat);
+  try {
+
+
+    //this.arreglo = Analizador.ARREGLO;
+ 
+    console.log('TAMAÑO DE ARREGLO\n\n '+ this.tipo)
+    this.errores = '\n\n ' + this.tipo;
+    
+  } catch (error) {
+    console.log('ERROR EN PARSER   ********'+error);
+  }
+ 
 
  }
 }
