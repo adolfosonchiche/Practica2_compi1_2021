@@ -12,11 +12,6 @@
  <textarea class="textArea" readonly matInput placeholder="datos encontrados al compilar..." cols="100" rows="10">{{lisrDat}}{{errores}}</textarea>
  <br><br><br>
 
- <nav>
-     <p>
-       <a href="/pagina1" >Ver analizadores creados</a>
- </p>
-   </nav>
-   <router-outlet></router-outlet>
+   <app-lis-analizador [informacion]= "myinfo"></app-lis-analizador>
 
 </form>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as Inicial from '../app.component'
 
 @Component({
@@ -8,8 +8,7 @@ import * as Inicial from '../app.component'
 })
 export class LisAnalizadorComponent implements OnInit {
 
-  lista = 'aun no hay analizadores';
-  dat : String;
+  @Input() informacion;
   constructor() { 
     
   }

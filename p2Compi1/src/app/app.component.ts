@@ -15,7 +15,6 @@ export class AppComponent {
   lisrDat='';
   errores='';
   tipo : String;
-  arreglo = [];
   constructor() { 
     var dar = (function(){
       return 'hola mundo';
@@ -47,7 +46,7 @@ export class AppComponent {
   }
  
  }
-
+public myinfo  = 'no hay datos';
  
 }
 
